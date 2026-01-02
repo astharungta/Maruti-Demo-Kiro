@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.API", "dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.API\dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.API.csproj", "{168FF123-9FC8-49ED-9185-B460285409EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.Client", "dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.Client\dc4c50a6582d4719b7b665f100330874gm_ewarr_sale3fmb.Client.csproj", "{BB0F67F8-BB2E-481F-A4BA-A07A36A483DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{168FF123-9FC8-49ED-9185-B460285409EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168FF123-9FC8-49ED-9185-B460285409EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168FF123-9FC8-49ED-9185-B460285409EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168FF123-9FC8-49ED-9185-B460285409EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0F67F8-BB2E-481F-A4BA-A07A36A483DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0F67F8-BB2E-481F-A4BA-A07A36A483DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0F67F8-BB2E-481F-A4BA-A07A36A483DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0F67F8-BB2E-481F-A4BA-A07A36A483DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
