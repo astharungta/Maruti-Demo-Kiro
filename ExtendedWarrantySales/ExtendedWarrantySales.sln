@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedWarrantySales.API", "ExtendedWarrantySales.API\ExtendedWarrantySales.API.csproj", "{E7B3C77F-1CBD-49D4-96E1-F940B6188D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedWarrantySales.Client", "ExtendedWarrantySales.Client\ExtendedWarrantySales.Client.csproj", "{0C5F560B-DD50-44DF-9A74-A6ACE4A63C18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B3C77F-1CBD-49D4-96E1-F940B6188D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B3C77F-1CBD-49D4-96E1-F940B6188D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B3C77F-1CBD-49D4-96E1-F940B6188D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B3C77F-1CBD-49D4-96E1-F940B6188D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5F560B-DD50-44DF-9A74-A6ACE4A63C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5F560B-DD50-44DF-9A74-A6ACE4A63C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5F560B-DD50-44DF-9A74-A6ACE4A63C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5F560B-DD50-44DF-9A74-A6ACE4A63C18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
