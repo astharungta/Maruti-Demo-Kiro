@@ -1,7 +1,7 @@
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Models;
+namespace Company.ExtendedWarrantySales.API.Models;
 
 public class DocumentModel
 {
-    [MaxLength(500)]
+    [MaxLength(200)]
     public string Remarks { get; set; }
 }

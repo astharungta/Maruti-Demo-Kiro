@@ -1,4 +1,4 @@
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Services;
+namespace Company.ExtendedWarrantySales.API.Services;
 
 public interface IExtendedWarrantyService
 {

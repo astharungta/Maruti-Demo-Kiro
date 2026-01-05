@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MarutiSuzuki.ExtendedWarrantySales.API.Models;
+using Company.ExtendedWarrantySales.API.Models;
 
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Data;
+namespace Company.ExtendedWarrantySales.API.Data;
 
 public class ApplicationDbContext : DbContext
 {

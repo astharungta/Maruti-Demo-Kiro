@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using MarutiSuzuki.ExtendedWarrantySales.API.Services;
+using Company.ExtendedWarrantySales.API.Services;
 
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Controllers;
+namespace Company.ExtendedWarrantySales.API.Controllers;
 
 [ApiController]
 [Route("api/extended-warranty")]

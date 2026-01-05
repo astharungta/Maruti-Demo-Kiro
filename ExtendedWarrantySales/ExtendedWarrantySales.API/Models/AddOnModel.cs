@@ -1,7 +1,7 @@
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Models;
+namespace Company.ExtendedWarrantySales.API.Models;
 
 public class AddOnModel
 {
     [Required]
-    public bool IsAddOnSelected { get; set; }
+    public bool AddOnYn { get; set; }
 }

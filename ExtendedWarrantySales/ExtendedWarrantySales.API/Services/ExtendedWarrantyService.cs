@@ -1,6 +1,6 @@
-using MarutiSuzuki.ExtendedWarrantySales.API.Data;
+using Company.ExtendedWarrantySales.API.Data;
 
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Services;
+namespace Company.ExtendedWarrantySales.API.Services;
 
 public class ExtendedWarrantyService : IExtendedWarrantyService
 {

@@ -1,23 +1,23 @@
-namespace MarutiSuzuki.ExtendedWarrantySales.API.Models;
+namespace Company.ExtendedWarrantySales.API.Models;
 
 public class ExtendedWarrantyModel
 {
     [Required]
     [MaxLength(100)]
-    public string VIN { get; set; }
+    public string Vin { get; set; }
 
     [Required]
     [MaxLength(50)]
-    public string OldWarrantyType { get; set; }
+    public string ExteWarrTypeOld { get; set; }
 
     [Required]
     [MaxLength(50)]
-    public string NewWarrantyType { get; set; }
+    public string ExteWarrTypeNew { get; set; }
 
     [Required]
-    public int ContractMileage { get; set; }
+    public int ExteContractMileage { get; set; }
 
     [Required]
     [MaxLength(20)]
-    public string PaymentMode { get; set; }
+    public string PayMode { get; set; }
 }

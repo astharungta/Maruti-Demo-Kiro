@@ -15,4 +15,4 @@ Generated .NET + Blazor application from Process Narration, BRD, and Figma desig
 4. Start Client: `cd ExtendedWarrantySales.Client && dotnet run`
 
 ## Features
-- ExtendedWarrantyPage
+- ExtendedWarrantySale
