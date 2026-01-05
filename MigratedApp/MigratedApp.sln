@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigratedApp.API", "MigratedApp.API\MigratedApp.API.csproj", "{084EBD3B-1734-44A2-AFD1-7B8EDD0CD04F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigratedApp.Client", "MigratedApp.Client\MigratedApp.Client.csproj", "{6F90DE9C-B14D-4FDD-9C46-5940D1B49AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084EBD3B-1734-44A2-AFD1-7B8EDD0CD04F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084EBD3B-1734-44A2-AFD1-7B8EDD0CD04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084EBD3B-1734-44A2-AFD1-7B8EDD0CD04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084EBD3B-1734-44A2-AFD1-7B8EDD0CD04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F90DE9C-B14D-4FDD-9C46-5940D1B49AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F90DE9C-B14D-4FDD-9C46-5940D1B49AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F90DE9C-B14D-4FDD-9C46-5940D1B49AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F90DE9C-B14D-4FDD-9C46-5940D1B49AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
