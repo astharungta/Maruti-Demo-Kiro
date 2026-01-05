@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Company.ExtendedWarrantySales.API.Data;
+using MarutiSuzuki.ExtendedWarrantySales.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
