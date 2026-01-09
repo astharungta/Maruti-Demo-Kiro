@@ -1,0 +1,1 @@
+// DbContext for GM.ExtendedWarrantySale
