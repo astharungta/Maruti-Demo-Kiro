@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-01-11T08:58:08.704Z",
+  "brdFile": "ExtendedWarranty_Complete_Field_Rules_and_Defaults 1.md",
+  "totalUserStories": 0,
+  "totalValidations": 0,
+  "files": [
+    "src/utils/validations.js",
+    "src/utils/useFormValidation.js"
+  ]
+}
