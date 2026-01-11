@@ -25,7 +25,7 @@ public class KYCController : ControllerBase
         }
 
         // Validate Documents
-        var (areDocsValid, docsMessage) = ValidationService.ValidateDocuments(request.Documents);
+        var (areDocsValid, docsMessage) = ValidationService.ValidateDocuments(request.Documents?.Count ?? 0);
         if (!areDocsValid)
         {
             return BadRequest(new KYCResponse
