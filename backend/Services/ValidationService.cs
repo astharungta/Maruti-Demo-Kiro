@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-using DmsBackend.Models;
 
 namespace DmsBackend.Services;
 
@@ -89,17 +88,10 @@ public class ValidationService
     }
 
     // Document Count Validation - BRD: Minimum 4 documents required
-    public static (bool isValid, string message) ValidateDocuments(List<DocumentUpload> documents)
+    public static (bool isValid, string message) ValidateDocuments(int documentCount)
     {
-        if (documents == null || documents.Count < 4)
+        if (documentCount < 4)
             return (false, "Please upload minimum 4 documents (BRD: Minimum requirement)");
-
-        // BRD Rule: Max 5MB (5120 KB) per document
-        foreach (var doc in documents)
-        {
-            if (doc.Size > 5120)
-                return (false, $"Document {doc.FileName} exceeds 5MB limit (BRD: Max file size)");
-        }
 
         return (true, "Documents validated (BRD validated)");
     }
