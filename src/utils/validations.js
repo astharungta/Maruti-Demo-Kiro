@@ -1,8 +1,11 @@
 // Auto-generated validation utilities from BRD
-// Generated: 2026-01-11T09:06:31.810Z
+// Generated: 2026-01-11T09:25:56.536Z
 // Source: ExtendedWarranty_Complete_Field_Rules_and_Defaults 1.md
 // Total User Stories: 0
 // Total Field Validations: 115
+// 
+// ⚠️ IMPORTANT: These validations are generated from the BRD field rules
+// Each validation function uses the specific rules defined in the BRD document
 
 export const brdValidations = [
   {
@@ -1044,90 +1047,143 @@ export const brdValidations = [
 
 export const userStories = [];
 
-// VIN Validation
+// VIN Validation (from BRD: VIN)
+// BRD Rules: Required | Type: VARCHAR2 | Length: 25 | Mandatory Upper case 17-25 characters OEM VIN format valida...
 export const validateVIN = (vin) => {
+    const brdRule = brdValidations.find(v => v.field === 'VIN');
+    
     if (!vin || vin.trim() === '') {
-        return { isValid: false, message: 'VIN is required' };
+        return { isValid: false, message: 'VIN is required (BRD: Mandatory field)' };
     }
     
-    // Check for common VIN lengths (17 for most, 20 for some Indian vehicles)
-    if (vin.length !== 17 && vin.length !== 20) {
-        return { isValid: false, message: 'VIN must be 17 or 20 characters' };
+    // BRD Rule: Upper case only
+    const upperVin = vin.toUpperCase();
+    
+    // BRD Rule: 17-25 characters (OEM VIN format)
+    if (upperVin.length < 17 || upperVin.length > 25) {
+        return { isValid: false, message: 'VIN must be 17-25 characters (BRD: OEM VIN format)' };
     }
     
-    // Allow alphanumeric characters
-    if (!/^[A-Z0-9]+$/i.test(vin)) {
-        return { isValid: false, message: 'VIN must contain only letters and numbers' };
+    // BRD Rule: Alphanumeric only
+    if (!/^[A-Z0-9]+$/.test(upperVin)) {
+        return { isValid: false, message: 'VIN must contain only letters and numbers (BRD: OEM format)' };
     }
     
-    return { isValid: true, message: 'Valid VIN' };
+    return { isValid: true, message: 'Valid VIN (BRD validated)', data: { brdRule } };
 };
 
-// Email Validation
+// Email Validation (from BRD: EXTE_CUST_EMAIL)
+// BRD Rules: Type: VARCHAR2 | Length: 100 | Display, disabled | Logic: Email address...
 export const validateEmail = (email) => {
+    const brdRule = brdValidations.find(v => v.field.includes('EMAIL'));
+    
     if (!email || email.trim() === '') {
         return { isValid: false, message: 'Email is required' };
     }
     
+    // BRD Rule: Email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        return { isValid: false, message: 'Invalid email format' };
+        return { isValid: false, message: 'Invalid email format (BRD: Standard email validation)' };
     }
     
-    return { isValid: true, message: 'Valid email' };
+    return { isValid: true, message: 'Valid email', data: { brdRule } };
 };
 
-// Phone Validation
+// Phone Validation (from BRD: EXTE_CUST_PHONE)
+// BRD Rules: Type: VARCHAR2 | Length: 50 | Display, disabled | Logic: Work phone...
 export const validatePhone = (phone) => {
+    const brdRule = brdValidations.find(v => v.field.includes('MOBILE') || v.field.includes('PHONE'));
+    
     if (!phone || phone.trim() === '') {
         return { isValid: false, message: 'Phone number is required' };
     }
     
+    // BRD Rule: 10 digit Indian mobile number
     const cleaned = phone.replace(/[^0-9]/g, '');
     if (cleaned.length !== 10) {
-        return { isValid: false, message: 'Phone must be 10 digits' };
+        return { isValid: false, message: 'Phone must be 10 digits (BRD: Indian mobile format)' };
     }
     
+    // BRD Rule: Must start with 6-9
     if (!/^[6-9]/.test(cleaned)) {
-        return { isValid: false, message: 'Phone must start with 6, 7, 8, or 9' };
+        return { isValid: false, message: 'Phone must start with 6, 7, 8, or 9 (BRD: Indian mobile)' };
     }
     
-    return { isValid: true, message: 'Valid phone number' };
+    return { isValid: true, message: 'Valid phone number', data: { brdRule } };
 };
 
-// Name Validation
+// Name Validation (from BRD: EXTE_CUST_NAME)
+// BRD Rules: Type: VARCHAR2 | Length: 100 | Display, disabled Min 3 characters validated | Logic: Customer full n...
 export const validateName = (name) => {
+    const brdRule = brdValidations.find(v => v.field.includes('CUST_NAME'));
+    
     if (!name || name.trim() === '') {
-        return { isValid: false, message: 'Name is required' };
+        return { isValid: false, message: 'Name is required (BRD: Mandatory)' };
     }
     
-    if (name.length < 2) {
-        return { isValid: false, message: 'Name must be at least 2 characters' };
+    // BRD Rule: Min 3 characters validated
+    if (name.length < 3) {
+        return { isValid: false, message: 'Name must be at least 3 characters (BRD: Min length)' };
     }
     
+    // BRD Rule: Letters and spaces only
     if (!/^[a-zA-Z\s]+$/.test(name)) {
-        return { isValid: false, message: 'Name can only contain letters and spaces' };
+        return { isValid: false, message: 'Name can only contain letters and spaces (BRD: Format)' };
     }
     
-    return { isValid: true, message: 'Valid name' };
+    return { isValid: true, message: 'Valid name', data: { brdRule } };
 };
 
-// GST Number Validation
+// GST Number Validation (from BRD: CUST_GST_NUM)
+// BRD Rules: Type: VARCHAR2 | Length: 30 | Display, disabled Format validated via pkg_einv.sp_validate_gstn | Log...
 export const validateGST = (gst) => {
+    const brdRule = brdValidations.find(v => v.field.includes('GST'));
+    
     if (!gst || gst.trim() === '') {
         return { isValid: false, message: 'GST number is required' };
     }
     
+    // BRD Rule: 15 characters
     if (gst.length !== 15) {
-        return { isValid: false, message: 'GST number must be 15 characters' };
+        return { isValid: false, message: 'GST number must be 15 characters (BRD: Length validation)' };
     }
     
+    // BRD Rule: GST format - 2 digits, 5 letters, 4 digits, 1 letter, 1 alphanumeric, Z, 1 alphanumeric
     const gstRegex = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/;
     if (!gstRegex.test(gst)) {
-        return { isValid: false, message: 'Invalid GST number format' };
+        return { isValid: false, message: 'Invalid GST number format (BRD: pkg_einv.sp_validate_gstn)' };
     }
     
-    return { isValid: true, message: 'Valid GST number' };
+    return { isValid: true, message: 'Valid GST number', data: { brdRule } };
+};
+
+// Mileage Validation (from BRD: EXTE_CONTRACT_MILEAGE)
+// BRD Rules: Required | Type: NUMBER | Length: 6 | Mandatory Must be >= DUMMY_MILEAGE (last service) Must be <= NB_EWR_PUR_MILEAGE (purchase limit) Cannot exceed w...
+export const validateMileage = (mileage, minMileage = 0, maxMileage = 100000) => {
+    const brdRule = brdValidations.find(v => v.field === 'EXTE_CONTRACT_MILEAGE');
+    
+    if (!mileage && mileage !== 0) {
+        return { isValid: false, message: 'Mileage is required (BRD: Mandatory)' };
+    }
+    
+    const mileageNum = parseInt(mileage);
+    
+    if (isNaN(mileageNum) || mileageNum < 0) {
+        return { isValid: false, message: 'Mileage must be a positive number (BRD: Validation)' };
+    }
+    
+    // BRD Rule: Must be >= DUMMY_MILEAGE (last service)
+    if (mileageNum < minMileage) {
+        return { isValid: false, message: `Mileage must be >= ${minMileage} km (BRD: >= last service)` };
+    }
+    
+    // BRD Rule: Must be <= NB_EWR_PUR_MILEAGE (purchase limit: 40K OLD, 100K NEW)
+    if (mileageNum > maxMileage) {
+        return { isValid: false, message: `Mileage must be <= ${maxMileage} km (BRD: Purchase limit)` };
+    }
+    
+    return { isValid: true, message: 'Valid mileage', data: { brdRule } };
 };
 
 // Date Validation
@@ -1160,7 +1216,7 @@ export const validateAmount = (amount) => {
 // Document Count Validation
 export const validateDocuments = (documents) => {
     if (!documents || documents.length < 4) {
-        return { isValid: false, message: 'Please upload minimum 4 documents' };
+        return { isValid: false, message: 'Please upload minimum 4 documents (BRD: Minimum requirement)' };
     }
     
     return { isValid: true, message: 'Documents validated' };
@@ -1175,47 +1231,90 @@ export const validateRequired = (value, fieldName) => {
     return { isValid: true, message: 'Valid' };
 };
 
+// ⚠️ DYNAMIC BRD FIELD VALIDATOR
+// This function validates ANY field based on its BRD rules
+export const validateFieldByBRD = (fieldName, value) => {
+    // Find the BRD validation rule for this field
+    const brdRule = brdValidations.find(v => 
+        v.field.toLowerCase() === fieldName.toLowerCase() ||
+        v.field.toLowerCase().includes(fieldName.toLowerCase()) ||
+        fieldName.toLowerCase().includes(v.field.toLowerCase())
+    );
+    
+    if (!brdRule) {
+        return { isValid: true, message: 'No BRD rule found for this field', warning: true };
+    }
+    
+    const errors = [];
+    const rules = brdRule.rules.toLowerCase();
+    
+    // Check mandatory/required
+    if (brdRule.mandatory === 'Yes' || rules.includes('required') || rules.includes('mandatory')) {
+        if (!value || value.toString().trim() === '') {
+            return { 
+                isValid: false, 
+                message: `${brdRule.field} is required (BRD: Mandatory field)`,
+                brdRule 
+            };
+        }
+    }
+    
+    // Check length constraints
+    if (brdRule.length && brdRule.length !== '-' && value) {
+        const maxLength = parseInt(brdRule.length);
+        if (!isNaN(maxLength) && value.toString().length > maxLength) {
+            errors.push(`Maximum length is ${maxLength} characters (BRD: Length constraint)`);
+        }
+    }
+    
+    // Check data type
+    if (brdRule.dataType && value) {
+        if (brdRule.dataType === 'NUMBER') {
+            if (isNaN(value)) {
+                errors.push(`Must be a number (BRD: Type ${brdRule.dataType})`);
+            }
+        }
+    }
+    
+    // Check specific validation rules from BRD
+    if (rules.includes('upper case') && value) {
+        if (value !== value.toString().toUpperCase()) {
+            errors.push('Must be uppercase (BRD: Upper case only)');
+        }
+    }
+    
+    if (rules.includes('min 3 char') && value) {
+        if (value.toString().length < 3) {
+            errors.push('Minimum 3 characters required (BRD: Min length)');
+        }
+    }
+    
+    if (errors.length > 0) {
+        return {
+            isValid: false,
+            message: errors[0],
+            allErrors: errors,
+            brdRule
+        };
+    }
+    
+    return {
+        isValid: true,
+        message: `Valid ${brdRule.field} (BRD validated)`,
+        brdRule
+    };
+};
+
 // Apply BRD validations to form data
 export const validateFormData = (formData) => {
     const errors = {};
     
     Object.keys(formData).forEach(field => {
         const value = formData[field];
-        const fieldLower = field.toLowerCase();
+        const result = validateFieldByBRD(field, value);
         
-        // Find matching BRD validation
-        const brdValidation = brdValidations.find(v => 
-            v.field.toLowerCase().includes(fieldLower) || 
-            fieldLower.includes(v.field.toLowerCase())
-        );
-        
-        if (brdValidation) {
-            const rules = brdValidation.rules.toLowerCase();
-            
-            // Apply validations based on BRD rules
-            if (rules.includes('required') && (!value || value.toString().trim() === '')) {
-                errors[field] = `${field} is required`;
-            }
-            
-            if (rules.includes('email') && value) {
-                const result = validateEmail(value);
-                if (!result.isValid) errors[field] = result.message;
-            }
-            
-            if (rules.includes('phone') && value) {
-                const result = validatePhone(value);
-                if (!result.isValid) errors[field] = result.message;
-            }
-            
-            if (rules.includes('vin') && value) {
-                const result = validateVIN(value);
-                if (!result.isValid) errors[field] = result.message;
-            }
-            
-            if (rules.includes('gst') && value) {
-                const result = validateGST(value);
-                if (!result.isValid) errors[field] = result.message;
-            }
+        if (!result.isValid && !result.warning) {
+            errors[field] = result.message;
         }
     });
     
@@ -1238,6 +1337,17 @@ export const getStoryValidations = (storyId) => {
     return brdValidations.filter(v => v.userStory === storyId);
 };
 
+// Get all mandatory fields from BRD
+export const getMandatoryFields = () => {
+    return brdValidations.filter(v => v.mandatory === 'Yes' || v.mandatory === 'Conditional');
+};
+
+// Get field default value from BRD
+export const getFieldDefault = (fieldName) => {
+    const field = getFieldValidation(fieldName);
+    return field ? field.defaultValue : null;
+};
+
 // Export all validators
 export default {
     validateVIN,
@@ -1245,13 +1355,17 @@ export default {
     validatePhone,
     validateName,
     validateGST,
+    validateMileage,
     validateDate,
     validateAmount,
     validateDocuments,
     validateRequired,
+    validateFieldByBRD,
     validateFormData,
     getFieldValidation,
     getStoryValidations,
+    getMandatoryFields,
+    getFieldDefault,
     brdValidations,
     userStories
 };
