@@ -1,6 +1,6 @@
 # 📋 Implementation Guide
-**Generated:** 1/11/2026, 2:16:48 PM
-**Deployment Version:** 2026-01-11T08:46:45.309Z
+**Generated:** 1/11/2026, 2:36:36 PM
+**Deployment Version:** 2026-01-11T09:06:31.864Z
 
 ---
 
@@ -11,7 +11,7 @@ This document provides a comprehensive overview of how Figma designs are transfo
 ### System Architecture
 - **Frontend:** React 18 + TypeScript + Vite
 - **Backend:** .NET 9.0 Web API
-- **Validation Source:** BRD Markdown (Intermediary BRD.md)
+- **Validation Source:** BRD Markdown (ExtendedWarranty_Complete_Field_Rules_and_Defaults 1.md)
 - **Design Source:** Figma designs from GitHub
 - **Deployment:** Automated from GitHub commits
 
@@ -32,7 +32,7 @@ This document provides a comprehensive overview of how Figma designs are transfo
 
 ### Validation Rules
 - **Total User Stories:** 0
-- **Field Validations:** 0
+- **Field Validations:** 115
 - **User Stories Covered:** 0
 
 ---
@@ -52,7 +52,7 @@ The Figma designs are exported and stored in GitHub. The deployment system:
 - `figma-source/` - Temporary storage for downloaded designs
 
 ### Step 2: BRD Validation Extraction
-**Source:** Intermediary BRD.md
+**Source:** ExtendedWarranty_Complete_Field_Rules_and_Defaults 1.md
 
 The system reads the BRD markdown file containing field-level validations:
 
@@ -60,7 +60,7 @@ The system reads the BRD markdown file containing field-level validations:
 - **Format:** Markdown with user stories and field validations
 - **Sections:** User Stories (US-XXX), Field Validations, Business Rules
 - **Total User Stories:** 0
-- **Total Field Validations:** 0
+- **Total Field Validations:** 115
 
 **Extraction Process:**
 1. Downloads BRD markdown file from GitHub
@@ -70,7 +70,7 @@ The system reads the BRD markdown file containing field-level validations:
 
 **Key Files:**
 - `fetch-brd-and-validate.cjs` - Fetches BRD and generates validation code
-- `Intermediary BRD.md` - Source BRD file
+- `ExtendedWarranty_Complete_Field_Rules_and_Defaults 1.md` - Source BRD file
 
 ### Step 3: Validation Code Generation
 **Output:** TypeScript/JavaScript validation utilities
