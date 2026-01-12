@@ -2,6 +2,7 @@ import { Download, Mail, FileText } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Separator } from '../ui/separator';
+import logoImage from 'figma:asset/2b58bc6d0712b0fa161cf044a4ff2a46f2f08b76.png';
 
 interface PolicyConfirmationProps {
   planName: string;
@@ -126,12 +127,7 @@ export function PolicyConfirmation({
               <div className="border rounded-lg p-6 bg-white space-y-4">
                 {/* Header */}
                 <div className="flex items-start justify-between pb-4 border-b">
-                  <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 bg-[#3E378F] rounded flex items-center justify-center text-white font-bold text-sm">
-                      MS
-                    </div>
-                    <span className="font-semibold text-sm">Maruti Suzuki</span>
-                  </div>
+                  <img src={logoImage} alt="Maruti Suzuki" className="h-12" />
                   <div className="text-right">
                     <p className="text-sm font-medium">Extended Warranty Certificate</p>
                     <p className="text-xs text-muted-foreground">MARUTI SUZUKI INDIA LIMITED</p>
