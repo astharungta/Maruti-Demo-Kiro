@@ -1,0 +1,6 @@
+@DmsBackend_HostAddress = http://localhost:5073
+
+GET {{DmsBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
