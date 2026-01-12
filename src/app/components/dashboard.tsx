@@ -30,8 +30,8 @@ const salesData = [
 ];
 
 const planDistribution = [
-  { name: 'Platinum', value: 35, color: '#3E378F' },
-  { name: 'Royal Platinum', value: 45, color: '#6B64C8' },
+  { name: 'Royal', value: 45, color: '#3E378F' },
+  { name: 'Platinum', value: 35, color: '#6B64C8' },
   { name: 'Solitaire', value: 20, color: '#9C97E5' }
 ];
 
