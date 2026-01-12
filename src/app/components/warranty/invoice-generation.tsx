@@ -2,6 +2,7 @@ import { Download, Mail, Printer, CheckCircle2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Separator } from '../ui/separator';
+import logoImage from 'figma:asset/2b58bc6d0712b0fa161cf044a4ff2a46f2f08b76.png';
 
 interface InvoiceGenerationProps {
   policyData: {
@@ -74,12 +75,7 @@ export function InvoiceGeneration({ policyData, onNext, onBack }: InvoiceGenerat
             {/* Header */}
             <div className="flex items-start justify-between pb-6 border-b">
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="h-10 w-10 bg-[#3E378F] rounded flex items-center justify-center text-white font-bold">
-                    MS
-                  </div>
-                  <span className="font-bold text-lg">Maruti Suzuki</span>
-                </div>
+                <img src={logoImage} alt="Maruti Suzuki" className="h-14 mb-4" />
                 <div className="text-sm">
                   <p className="font-medium">MARUTI SUZUKI INDIA LIMITED</p>
                   <p className="text-muted-foreground">Authorized Dealer</p>
