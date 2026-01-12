@@ -12,6 +12,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { cn } from './ui/utils';
+import logoImage from 'figma:asset/2b58bc6d0712b0fa161cf044a4ff2a46f2f08b76.png';
 
 interface DMSSidebarProps {
   collapsed: boolean;
@@ -35,19 +36,14 @@ export function DMSSidebar({ collapsed, onToggle, activeSection, onSectionChange
   return (
     <div 
       className={cn(
-        "h-screen bg-[#1A1535] text-white flex flex-col transition-all duration-300 ease-in-out",
+        "h-screen bg-black text-white flex flex-col transition-all duration-300 ease-in-out",
         collapsed ? "w-16" : "w-64"
       )}
     >
       {/* Logo Section */}
-      <div className="h-16 flex items-center justify-center border-b border-[#2A2450] px-4">
+      <div className="h-16 flex items-center justify-center border-b border-gray-800 px-4">
         {!collapsed ? (
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-white rounded flex items-center justify-center text-[#3E378F] font-bold text-sm">
-              MS
-            </div>
-            <span className="text-white font-semibold">Maruti Suzuki</span>
-          </div>
+          <img src={logoImage} alt="Maruti Suzuki" className="h-12 w-auto" />
         ) : (
           <div className="w-8 h-8 bg-[#3E378F] rounded flex items-center justify-center text-white">
             MS
@@ -70,7 +66,7 @@ export function DMSSidebar({ collapsed, onToggle, activeSection, onSectionChange
                     "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
                     isActive 
                       ? "bg-[#3E378F] text-white" 
-                      : "text-gray-300 hover:bg-[#2A2450] hover:text-white"
+                      : "text-gray-300 hover:bg-gray-900 hover:text-white"
                   )}
                   title={collapsed ? item.label : undefined}
                 >
@@ -86,10 +82,10 @@ export function DMSSidebar({ collapsed, onToggle, activeSection, onSectionChange
       </nav>
 
       {/* Collapse Toggle Button */}
-      <div className="p-4 border-t border-[#2A2450]">
+      <div className="p-4 border-t border-gray-800">
         <button
           onClick={onToggle}
-          className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-gray-300 hover:bg-[#2A2450] hover:text-white transition-colors"
+          className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-gray-300 hover:bg-gray-900 hover:text-white transition-colors"
         >
           {collapsed ? (
             <ChevronRight className="w-5 h-5" />
