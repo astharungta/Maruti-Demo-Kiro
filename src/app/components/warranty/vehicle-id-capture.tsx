@@ -5,7 +5,6 @@ import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { Label } from '../ui/label';
 import { Badge } from '../ui/badge';
-import { validateVIN, validateRegistrationNumber } from '../../../utils/validations';
 
 interface Vehicle {
   vin: string;
@@ -27,19 +26,9 @@ export function VehicleIdCapture({
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [isScanning, setIsScanning] = useState(false);
   const [inputMethod, setInputMethod] = useState<'manual' | 'scan'>('manual');
-  const [vinError, setVinError] = useState<string>('');
 
   const handleAddVehicle = () => {
     if (!currentVin.trim()) return;
-
-    // Validate VIN format (US-001)
-    const vinValidation = validateVIN(currentVin);
-    if (!vinValidation.isValid) {
-      setVinError(vinValidation.error || 'Invalid VIN');
-      return;
-    }
-
-    setVinError('');
 
     const newVehicle: Vehicle = {
       vin: currentVin,
@@ -53,7 +42,7 @@ export function VehicleIdCapture({
     setVehicles([...vehicles, newVehicle]);
     setCurrentVin('');
 
-    // Simulate API validation (US-001: VIN Enquiry)
+    // Simulate API validation
     setTimeout(() => {
       // Generate a year between 2023-2026 for testing (some valid, some invalid)
       const possibleYears = ['2023', '2024', '2025', '2026'];
@@ -131,28 +120,16 @@ export function VehicleIdCapture({
           {/* Manual VIN Entry */}
           {inputMethod === 'manual' && (
             <div className="space-y-4">
-              <Label htmlFor="vin">Vehicle Identification Number (VIN) *</Label>
+              <Label htmlFor="vin">Vehicle Identification Number (VIN)</Label>
               <div className="flex gap-3">
-                <div className="flex-1">
-                  <Input
-                    id="vin"
-                    placeholder="Enter 17-character VIN (e.g., MA3EUA81S00123456)"
-                    value={currentVin}
-                    onChange={(e) => {
-                      setCurrentVin(e.target.value.toUpperCase());
-                      setVinError('');
-                    }}
-                    onKeyPress={(e) => e.key === 'Enter' && handleAddVehicle()}
-                    className={`text-base ${vinError ? 'border-red-500' : ''}`}
-                    maxLength={17}
-                  />
-                  {vinError && (
-                    <p className="text-sm text-red-500 mt-1 flex items-center gap-1">
-                      <AlertCircle className="h-3 w-3" />
-                      {vinError}
-                    </p>
-                  )}
-                </div>
+                <Input
+                  id="vin"
+                  placeholder="Enter VIN (e.g., MA3EUA81S00123456)"
+                  value={currentVin}
+                  onChange={(e) => setCurrentVin(e.target.value.toUpperCase())}
+                  onKeyPress={(e) => e.key === 'Enter' && handleAddVehicle()}
+                  className="text-base"
+                />
                 <Button
                   onClick={handleAddVehicle}
                   disabled={!currentVin.trim()}
