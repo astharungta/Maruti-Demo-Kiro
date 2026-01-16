@@ -1,5 +1,5 @@
 // Auto-generated validation hook from BRD
-// Generated: 2026-01-12T10:32:13.663Z
+// Generated: 2026-01-16T06:44:18.180Z
 
 import { useState } from 'react';
 import validations from './validations';
