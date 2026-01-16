@@ -1,7 +1,9 @@
 # 📋 User Story Catalogue
-**Generated:** 1/16/2026, 12:22:57 PM
-**Source:** GitHub astharungta/Figma-Design/figma-source
-**Application:** Extended Warranty Management System
+## Extended Warranty Management System
+
+**Generated:** 1/16/2026, 12:57:32 PM  
+**Source:** Figma Design Code Files (GitHub: astharungta/Figma-Design/New)  
+**Application:** Maruti Suzuki Extended Warranty Portal
 
 ---
 
@@ -9,1528 +11,632 @@
 
 | Metric | Count |
 |--------|-------|
-| Total User Stories | 82 |
-| Frontend Components | 82 |
-| Backend Services | 0 |
-| Style Files | 4 |
-| Total Files Analyzed | 96 |
+| Total User Stories | 20 |
+| Epics | 6 |
+| Workflow Steps | 9 |
+| Source Files Analyzed | 96 |
 
----
-
-## 🎯 User Stories Overview
-
-| ID | Title | Type | Source File |
-|----|-------|------|-------------|
-| US-001 | App | Frontend Component | App.tsx |
-| US-002 | Admin View | Frontend Component | AdminView.tsx |
-| US-003 | Data | Frontend Component | AgentPerformanceChart.tsx |
-| US-004 | Business View | Frontend Component | BusinessView.tsx |
-| US-005 | Sales Data | Frontend Component | dashboard.tsx |
-| US-006 | Dashboard Filters | Frontend Component | DashboardFilters.tsx |
-| US-007 | Menu Items | Frontend Component | dms-sidebar.tsx |
-| US-008 | D M S Topbar | Frontend Component | dms-topbar.tsx |
-| US-009 | Failed Orders | Frontend Component | FailedValidationsDialog.tsx |
-| US-010 | E R R O R  I M G  S R C | Frontend Component | ImageWithFallback.tsx |
-| US-011 | Header | Frontend Component | Header.tsx |
-| US-012 | K P I Card | Frontend Component | kpi-card.tsx |
-| US-013 | Kpi Card | Frontend Component | KpiCard.tsx |
-| US-014 | Data Source All | Frontend Component | OrderSourceChart.tsx |
-| US-015 | Daily Data | Frontend Component | OrderVolumeChart.tsx |
-| US-016 | Recent Orders | Frontend Component | RecentOrdersTable.tsx |
-| US-017 | Sidebar | Frontend Component | Sidebar.tsx |
-| US-018 | Daily Data | Frontend Component | SystemUsageTrendChart.tsx |
-| US-019 | Agent Token Data | Frontend Component | TokenDetailsDialog.tsx |
-| US-020 | Data | Frontend Component | TokenUsageChart.tsx |
-| US-021 | Accordion | Frontend Component | accordion.tsx |
-| US-022 | Alert Dialog | Frontend Component | alert-dialog.tsx |
-| US-023 | Alert Variants | Frontend Component | alert.tsx |
-| US-024 | Aspect Ratio | Frontend Component | aspect-ratio.tsx |
-| US-025 | Avatar | Frontend Component | avatar.tsx |
-| US-026 | Badge Variants | Frontend Component | badge.tsx |
-| US-027 | Breadcrumb | Frontend Component | breadcrumb.tsx |
-| US-028 | Button Variants | Frontend Component | button.tsx |
-| US-029 | Calendar | Frontend Component | calendar.tsx |
-| US-030 | Card | Frontend Component | card.tsx |
-| US-031 | Carousel Context | Frontend Component | carousel.tsx |
-| US-032 | T H E M E S | Frontend Component | chart.tsx |
-| US-033 | Checkbox | Frontend Component | checkbox.tsx |
-| US-034 | Collapsible | Frontend Component | collapsible.tsx |
-| US-035 | Command | Frontend Component | command.tsx |
-| US-036 | Context Menu | Frontend Component | context-menu.tsx |
-| US-037 | Dialog | Frontend Component | dialog.tsx |
-| US-038 | Drawer | Frontend Component | drawer.tsx |
-| US-039 | Dropdown Menu | Frontend Component | dropdown-menu.tsx |
-| US-040 | Form | Frontend Component | form.tsx |
-| US-041 | Hover Card | Frontend Component | hover-card.tsx |
-| US-042 | Input O T P | Frontend Component | input-otp.tsx |
-| US-043 | Input | Frontend Component | input.tsx |
-| US-044 | Label | Frontend Component | label.tsx |
-| US-045 | Menubar | Frontend Component | menubar.tsx |
-| US-046 | Navigation Menu | Frontend Component | navigation-menu.tsx |
-| US-047 | Pagination | Frontend Component | pagination.tsx |
-| US-048 | Popover | Frontend Component | popover.tsx |
-| US-049 | Progress | Frontend Component | progress.tsx |
-| US-050 | Radio Group | Frontend Component | radio-group.tsx |
-| US-051 | Resizable Panel Group | Frontend Component | resizable.tsx |
-| US-052 | Scroll Area | Frontend Component | scroll-area.tsx |
-| US-053 | Select | Frontend Component | select.tsx |
-| US-054 | Separator | Frontend Component | separator.tsx |
-| US-055 | Sheet | Frontend Component | sheet.tsx |
-| US-056 | S I D E B A R  C O O K I E  N A M E | Frontend Component | sidebar.tsx |
-| US-057 | Skeleton | Frontend Component | skeleton.tsx |
-| US-058 | Slider | Frontend Component | slider.tsx |
-| US-059 | Toaster | Frontend Component | sonner.tsx |
-| US-060 | Switch | Frontend Component | switch.tsx |
-| US-061 | Table | Frontend Component | table.tsx |
-| US-062 | Tabs | Frontend Component | tabs.tsx |
-| US-063 | Textarea | Frontend Component | textarea.tsx |
-| US-064 | Toggle Group Context | Frontend Component | toggle-group.tsx |
-| US-065 | Toggle Variants | Frontend Component | toggle.tsx |
-| US-066 | Tooltip Provider | Frontend Component | tooltip.tsx |
-| US-067 | M O B I L E  B R E A K P O I N T | Frontend Component | use-mobile.ts |
-| US-068 | Addons | Frontend Component | addons-selection.tsx |
-| US-069 | Delivery Completion | Frontend Component | delivery-completion.tsx |
-| US-070 | Eligibility Check | Frontend Component | eligibility-check.tsx |
-| US-071 | Invoice Generation | Frontend Component | invoice-generation.tsx |
-| US-072 | K Y C Verification | Frontend Component | kyc-verification.tsx |
-| US-073 | Payment Methods | Frontend Component | payment-options.tsx |
-| US-074 | Plans | Frontend Component | plan-selection.tsx |
-| US-075 | Policy Confirmation | Frontend Component | policy-confirmation.tsx |
-| US-076 | Vehicle Id Capture | Frontend Component | vehicle-id-capture.tsx |
-| US-077 | Workflow Steps | Frontend Component | warranty-workflow.tsx |
-| US-078 | Workflow Stepper | Frontend Component | workflow-stepper.tsx |
-| US-079 | Main | Frontend Component | main.tsx |
-| US-080 | A P I  B A S E  U R L | Frontend Component | api.ts |
-| US-081 | Validate V I N | Frontend Component | validations.ts |
-| US-082 | Vite.config | Frontend Component | vite.config.ts |
-
----
-
-## 📝 Detailed User Stories
-
-### US-001: App
-
-**Type:** Frontend Component
-**Source File:** `App.tsx`
-
-**User Story:**
-> As a user, I want to interact with the App so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**User Actions:**
-- set Active Section
-
----
-
-### US-002: Admin View
-
-**Type:** Frontend Component
-**Source File:** `AdminView.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Admin View so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-003: Data
-
-**Type:** Frontend Component
-**Source File:** `AgentPerformanceChart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- " name="
-- " fill="
-
----
-
-### US-004: Business View
-
-**Type:** Frontend Component
-**Source File:** `BusinessView.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Business View so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-005: Sales Data
-
-**Type:** Frontend Component
-**Source File:** `dashboard.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Sales Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-006: Dashboard Filters
-
-**Type:** Frontend Component
-**Source File:** `DashboardFilters.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Dashboard Filters so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-007: Menu Items
-
-**Type:** Frontend Component
-**Source File:** `dms-sidebar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Menu Items so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**User Actions:**
-- Toggle
-
----
-
-### US-008: D M S Topbar
-
-**Type:** Frontend Component
-**Source File:** `dms-topbar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the D M S Topbar so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**User Actions:**
-- Menu Toggle
-
----
-
-### US-009: Failed Orders
-
-**Type:** Frontend Component
-**Source File:** `FailedValidationsDialog.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Failed Orders so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- "Customer Credit Limit Exceeded"
-- "Invalid SKU: XJ-900"
-- "Missing Billing Address"
-- "Customer ID Match Failed"
-- "Duplicate PO Number detected"
-
----
-
-### US-010: E R R O R  I M G  S R C
-
-**Type:** Frontend Component
-**Source File:** `ImageWithFallback.tsx`
-
-**User Story:**
-> As a user, I want to interact with the E R R O R  I M G  S R C so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-011: Header
-
-**Type:** Frontend Component
-**Source File:** `Header.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Header so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**User Actions:**
-- Refresh
-
----
-
-### US-012: K P I Card
-
-**Type:** Frontend Component
-**Source File:** `kpi-card.tsx`
-
-**User Story:**
-> As a user, I want to interact with the K P I Card so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-013: Kpi Card
-
-**Type:** Frontend Component
-**Source File:** `KpiCard.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Kpi Card so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**User Actions:**
-- Click
-
----
-
-### US-014: Data Source All
-
-**Type:** Frontend Component
-**Source File:** `OrderSourceChart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Data Source All so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-015: Daily Data
-
-**Type:** Frontend Component
-**Source File:** `OrderVolumeChart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Daily Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-016: Recent Orders
-
-**Type:** Frontend Component
-**Source File:** `RecentOrdersTable.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Recent Orders so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-017: Sidebar
-
-**Type:** Frontend Component
-**Source File:** `Sidebar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Sidebar so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-018: Daily Data
-
-**Type:** Frontend Component
-**Source File:** `SystemUsageTrendChart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Daily Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-019: Agent Token Data
-
-**Type:** Frontend Component
-**Source File:** `TokenDetailsDialog.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Agent Token Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-020: Data
-
-**Type:** Frontend Component
-**Source File:** `TokenUsageChart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Data so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-021: Accordion
-
-**Type:** Frontend Component
-**Source File:** `accordion.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Accordion so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-022: Alert Dialog
-
-**Type:** Frontend Component
-**Source File:** `alert-dialog.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Alert Dialog so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-023: Alert Variants
-
-**Type:** Frontend Component
-**Source File:** `alert.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Alert Variants so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-024: Aspect Ratio
-
-**Type:** Frontend Component
-**Source File:** `aspect-ratio.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Aspect Ratio so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-025: Avatar
-
-**Type:** Frontend Component
-**Source File:** `avatar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Avatar so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-026: Badge Variants
-
-**Type:** Frontend Component
-**Source File:** `badge.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Badge Variants so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-027: Breadcrumb
-
-**Type:** Frontend Component
-**Source File:** `breadcrumb.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Breadcrumb so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-028: Button Variants
-
-**Type:** Frontend Component
-**Source File:** `button.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Button Variants so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-029: Calendar
-
-**Type:** Frontend Component
-**Source File:** `calendar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Calendar so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-030: Card
-
-**Type:** Frontend Component
-**Source File:** `card.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Card so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-031: Carousel Context
-
-**Type:** Frontend Component
-**Source File:** `carousel.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Carousel Context so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- "useCarousel must be used within a <Carousel />"
-
-**User Actions:**
-- scroll Prev
-- scroll Next
-
----
-
-### US-032: T H E M E S
-
-**Type:** Frontend Component
-**Source File:** `chart.tsx`
-
-**User Story:**
-> As a user, I want to interact with the T H E M E S so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- "useChart must be used within a <ChartContainer />"
-
----
-
-### US-033: Checkbox
-
-**Type:** Frontend Component
-**Source File:** `checkbox.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Checkbox so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-034: Collapsible
-
-**Type:** Frontend Component
-**Source File:** `collapsible.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Collapsible so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-035: Command
-
-**Type:** Frontend Component
-**Source File:** `command.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Command so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-036: Context Menu
-
-**Type:** Frontend Component
-**Source File:** `context-menu.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Context Menu so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-037: Dialog
-
-**Type:** Frontend Component
-**Source File:** `dialog.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Dialog so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-038: Drawer
-
-**Type:** Frontend Component
-**Source File:** `drawer.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Drawer so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-039: Dropdown Menu
-
-**Type:** Frontend Component
-**Source File:** `dropdown-menu.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Dropdown Menu so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-040: Form
-
-**Type:** Frontend Component
-**Source File:** `form.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Form so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- "useFormField should be used within <FormField>"
-- ", className)}
-      htmlFor={formItemId}
-      {...props}
-    />
-  );
-}
-
-function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
-  const { error, formItemId, formDescriptionId, formMessageId } =
-    useFormField();
-
-  return (
-    <Slot
-      data-slot="
-- "p"
-- ") : props.children;
-
-  if (!body) {
-    return null;
-  }
-
-  return (
-    <p
-      data-slot="
-- "
-      id={formMessageId}
-      className={cn("
-
----
-
-### US-041: Hover Card
-
-**Type:** Frontend Component
-**Source File:** `hover-card.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Hover Card so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-042: Input O T P
-
-**Type:** Frontend Component
-**Source File:** `input-otp.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Input O T P so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-043: Input
-
-**Type:** Frontend Component
-**Source File:** `input.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Input so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-044: Label
-
-**Type:** Frontend Component
-**Source File:** `label.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Label so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-045: Menubar
-
-**Type:** Frontend Component
-**Source File:** `menubar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Menubar so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-046: Navigation Menu
-
-**Type:** Frontend Component
-**Source File:** `navigation-menu.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Navigation Menu so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-047: Pagination
-
-**Type:** Frontend Component
-**Source File:** `pagination.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Pagination so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-048: Popover
-
-**Type:** Frontend Component
-**Source File:** `popover.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Popover so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-049: Progress
-
-**Type:** Frontend Component
-**Source File:** `progress.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Progress so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-050: Radio Group
-
-**Type:** Frontend Component
-**Source File:** `radio-group.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Radio Group so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-051: Resizable Panel Group
-
-**Type:** Frontend Component
-**Source File:** `resizable.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Resizable Panel Group so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-052: Scroll Area
-
-**Type:** Frontend Component
-**Source File:** `scroll-area.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Scroll Area so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-053: Select
-
-**Type:** Frontend Component
-**Source File:** `select.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Select so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-054: Separator
-
-**Type:** Frontend Component
-**Source File:** `separator.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Separator so that I can complete the related workflow step.
-
-#### Acceptance Criteria
+### Epics Overview
+1. **Vehicle Identification & Eligibility** - 3 user stories
+2. **Plan Selection & Customization** - 3 user stories
+3. **Customer Verification** - 2 user stories
+4. **Policy & Payment** - 6 user stories
+5. **Invoice & Delivery** - 4 user stories
+6. **Workflow Navigation** - 2 user stories
 
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-055: Sheet
-
-**Type:** Frontend Component
-**Source File:** `sheet.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Sheet so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
-
-### US-056: S I D E B A R  C O O K I E  N A M E
-
-**Type:** Frontend Component
-**Source File:** `sidebar.tsx`
-
-**User Story:**
-> As a user, I want to interact with the S I D E B A R  C O O K I E  N A M E so that I can complete the related workflow step.
-
-#### Acceptance Criteria
-
-**Error Messages:**
-- "useSidebar must be used within a SidebarProvider."
-
-**User Actions:**
-- toggle Sidebar
-
 ---
-
-### US-057: Skeleton
 
-**Type:** Frontend Component
-**Source File:** `skeleton.tsx`
+## 🎯 User Journey Overview
 
-**User Story:**
-> As a user, I want to interact with the Skeleton so that I can complete the related workflow step.
+The Extended Warranty workflow consists of 9 sequential steps:
 
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
+| Step | Name | Primary Actor | Description |
+|------|------|---------------|-------------|
+| 1 | Vehicle Identification | Dealer | Capture and validate vehicle details to initiate warranty process |
+| 2 | Eligibility Check | System | Verify vehicle eligibility based on age, mileage, and service history |
+| 3 | Plan Selection | Dealer/Customer | Select appropriate warranty plan and coverage tenure |
+| 4 | Add-ons Selection | Dealer/Customer | Choose optional coverage add-ons to enhance warranty package |
+| 5 | KYC Verification | Customer | Complete identity verification for policy issuance |
+| 6 | Policy Confirmation | Dealer/Customer | Review and confirm policy details before payment |
+| 7 | Payment Processing | Customer | Complete payment using preferred payment method |
+| 8 | Invoice Generation | System | Generate invoice and policy documents after successful payment |
+| 9 | Delivery Completion | Dealer | Complete warranty delivery and send confirmation to customer |
 
 ---
-
-### US-058: Slider
-
-**Type:** Frontend Component
-**Source File:** `slider.tsx`
 
-**User Story:**
-> As a user, I want to interact with the Slider so that I can complete the related workflow step.
+## 📝 User Stories by Epic
 
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
+### Vehicle Identification & Eligibility
 
-### US-059: Toaster
+| ID | Title | Actor |
+|----|-------|-------|
+| US-001 | Capture Vehicle VIN for Warranty Eligibility | Dealer |
+| US-002 | Scan RC Document for Vehicle Details | Dealer |
+| US-003 | Check Vehicle Warranty Eligibility | System |
 
-**Type:** Frontend Component
-**Source File:** `sonner.tsx`
+### Plan Selection & Customization
 
-**User Story:**
-> As a user, I want to interact with the Toaster so that I can complete the related workflow step.
+| ID | Title | Actor |
+|----|-------|-------|
+| US-004 | View and Compare Warranty Plans | Dealer/Customer |
+| US-005 | Select Warranty Coverage Tenure | Dealer/Customer |
+| US-006 | Select Optional Coverage Add-ons | Dealer/Customer |
 
-#### Acceptance Criteria
+### Customer Verification
 
-*No specific acceptance criteria extracted from code.*
+| ID | Title | Actor |
+|----|-------|-------|
+| US-007 | Verify Customer Using Existing KYC | Customer |
+| US-008 | Complete Manual KYC Entry | Customer |
 
----
+### Policy & Payment
 
-### US-060: Switch
+| ID | Title | Actor |
+|----|-------|-------|
+| US-009 | Review Policy Details Before Payment | Dealer/Customer |
+| US-010 | Select Payment Method | Customer |
+| US-011 | Pay Using Credit/Debit Card | Customer |
+| US-012 | Pay Using UPI | Customer |
+| US-013 | Convert Payment to EMI | Customer |
+| US-014 | Redeem Loyalty Points | Customer |
 
-**Type:** Frontend Component
-**Source File:** `switch.tsx`
+### Invoice & Delivery
 
-**User Story:**
-> As a user, I want to interact with the Switch so that I can complete the related workflow step.
+| ID | Title | Actor |
+|----|-------|-------|
+| US-015 | Generate Invoice After Payment | System |
+| US-016 | Send Policy Documents via Email | Dealer |
+| US-017 | Send Confirmation SMS | Dealer |
+| US-018 | Complete Warranty Delivery Process | Dealer |
 
-#### Acceptance Criteria
+### Workflow Navigation
 
-*No specific acceptance criteria extracted from code.*
+| ID | Title | Actor |
+|----|-------|-------|
+| US-019 | Navigate Through Warranty Workflow Steps | Dealer |
+| US-020 | Cancel Warranty Application | Dealer |
 
 ---
-
-### US-061: Table
 
-**Type:** Frontend Component
-**Source File:** `table.tsx`
+## 📖 Detailed User Stories
 
-**User Story:**
-> As a user, I want to interact with the Table so that I can complete the related workflow step.
+### US-001: Capture Vehicle VIN for Warranty Eligibility
 
-#### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
-
----
+**Epic:** Vehicle Identification & Eligibility  
+**Actor:** Dealer  
+**Frontend Component:** `vehicle-id-capture.tsx`  
+**Backend Services:** VIN validation API, Vehicle lookup service
 
-### US-062: Tabs
+#### User Story
+> As a dealer, I want to capture the vehicle VIN number so that I can check if the vehicle is eligible for extended warranty.
 
-**Type:** Frontend Component
-**Source File:** `tabs.tsx`
-
-**User Story:**
-> As a user, I want to interact with the Tabs so that I can complete the related workflow step.
-
 #### Acceptance Criteria
+1. VIN input field accepts 17-25 alphanumeric characters
+2. VIN is validated in real-time as user types
+3. Invalid VIN format shows clear error message
+4. System fetches vehicle details (make, model, year, registration) from VIN
+5. Multiple vehicles can be added for batch processing
 
-*No specific acceptance criteria extracted from code.*
-
 ---
 
-### US-063: Textarea
+### US-002: Scan RC Document for Vehicle Details
 
-**Type:** Frontend Component
-**Source File:** `textarea.tsx`
+**Epic:** Vehicle Identification & Eligibility  
+**Actor:** Dealer  
+**Frontend Component:** `vehicle-id-capture.tsx`  
+**Backend Services:** OCR service, Document processing API
 
-**User Story:**
-> As a user, I want to interact with the Textarea so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to scan the Registration Certificate (RC) document so that vehicle details are automatically captured without manual entry.
 
 #### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
+1. OCR scanner activates camera for document capture
+2. System extracts VIN from scanned RC document
+3. Extracted data is validated before proceeding
+4. Manual entry option available if scan fails
+5. Scanning progress indicator shown during processing
 
 ---
 
-### US-064: Toggle Group Context
+### US-003: Check Vehicle Warranty Eligibility
 
-**Type:** Frontend Component
-**Source File:** `toggle-group.tsx`
+**Epic:** Vehicle Identification & Eligibility  
+**Actor:** System  
+**Frontend Component:** `eligibility-check.tsx`  
+**Backend Services:** Eligibility validation service, Vehicle history API
 
-**User Story:**
-> As a user, I want to interact with the Toggle Group Context so that I can complete the related workflow step.
+#### User Story
+> As a system, I want to automatically check vehicle eligibility based on age, mileage, and service history so that only qualified vehicles proceed to warranty selection.
 
 #### Acceptance Criteria
+1. Vehicle age must be less than 3 years from manufacture date
+2. Mileage must be under 40,000 km for OLD vehicles or 100,000 km for NEW vehicles
+3. Service history must be up to date with authorized service centers
+4. Eligibility check shows progress indicator during validation
+5. Clear pass/fail status displayed for each eligibility criterion
+6. Ineligible vehicles show specific reasons for rejection
 
-*No specific acceptance criteria extracted from code.*
-
 ---
 
-### US-065: Toggle Variants
+### US-004: View and Compare Warranty Plans
 
-**Type:** Frontend Component
-**Source File:** `toggle.tsx`
+**Epic:** Plan Selection & Customization  
+**Actor:** Dealer/Customer  
+**Frontend Component:** `plan-selection.tsx`  
+**Backend Services:** Plan catalog service, Pricing API
 
-**User Story:**
-> As a user, I want to interact with the Toggle Variants so that I can complete the related workflow step.
+#### User Story
+> As a dealer or customer, I want to view and compare available warranty plans so that I can choose the most suitable coverage option.
 
 #### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
+1. Three warranty plans displayed: Platinum, Royal Platinum, Solitaire
+2. Each plan shows coverage details, price per year, and maximum tenure
+3. Recommended plan is highlighted for easy identification
+4. Plan comparison shows coverage differences clearly
+5. Platinum: Engine, Transmission, Electrical, Fuel, Cooling systems
+6. Royal Platinum: All Platinum + AC, Suspension, Steering, Brakes
+7. Solitaire: All Royal Platinum + Infotainment, Power systems, Airbags
 
 ---
 
-### US-066: Tooltip Provider
+### US-005: Select Warranty Coverage Tenure
 
-**Type:** Frontend Component
-**Source File:** `tooltip.tsx`
+**Epic:** Plan Selection & Customization  
+**Actor:** Dealer/Customer  
+**Frontend Component:** `plan-selection.tsx`  
+**Backend Services:** Premium calculation service
 
-**User Story:**
-> As a user, I want to interact with the Tooltip Provider so that I can complete the related workflow step.
+#### User Story
+> As a dealer or customer, I want to select the coverage tenure (1-6 years) so that I can customize the warranty duration based on my needs.
 
 #### Acceptance Criteria
+1. Tenure dropdown shows available options based on selected plan
+2. Platinum plan allows up to 4 years tenure
+3. Royal Platinum plan allows up to 5 years tenure
+4. Solitaire plan allows up to 6 years tenure
+5. Total premium updates automatically when tenure changes
+6. Premium calculation: Base price × Number of years
 
-*No specific acceptance criteria extracted from code.*
-
 ---
 
-### US-067: M O B I L E  B R E A K P O I N T
+### US-006: Select Optional Coverage Add-ons
 
-**Type:** Frontend Component
-**Source File:** `use-mobile.ts`
+**Epic:** Plan Selection & Customization  
+**Actor:** Dealer/Customer  
+**Frontend Component:** `addons-selection.tsx`  
+**Backend Services:** Add-on catalog service, Premium calculation
 
-**User Story:**
-> As a user, I want to interact with the M O B I L E  B R E A K P O I N T so that I can complete the related workflow step.
+#### User Story
+> As a dealer or customer, I want to select optional add-on packages so that I can enhance my warranty coverage for specific risks.
 
 #### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
+1. Three CCP add-ons available: CCP Fuel (₹3,999), CCP Hydro (₹5,999), CCP Plus (₹8,999)
+2. CCP Fuel covers repairs due to fuel quality issues
+3. CCP Hydro covers repairs due to water entering the engine
+4. CCP Plus covers both fuel quality and water damage
+5. Recommended add-on is highlighted
+6. Add-on prices are added to base premium
+7. Premium summary updates in real-time as add-ons are selected/deselected
 
 ---
 
-### US-068: Addons
+### US-007: Verify Customer Using Existing KYC
 
-**Type:** Frontend Component
-**Source File:** `addons-selection.tsx`
+**Epic:** Customer Verification  
+**Actor:** Customer  
+**Frontend Component:** `kyc-verification.tsx`  
+**Backend Services:** KYC verification service, Customer database
 
-**User Story:**
-> As a user, I want to interact with the Addons so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to use my existing KYC records so that I can complete verification quickly without re-submitting documents.
 
 #### Acceptance Criteria
+1. System checks for existing KYC records automatically
+2. Loading indicator shown during KYC lookup
+3. If found, displays masked Aadhaar (XXXX XXXX 1234) and PAN details
+4. Customer name and verification date displayed
+5. Green success indicator when KYC is verified
+6. Option to proceed with existing KYC or enter new details
 
-**User Actions:**
-- Back
-
 ---
 
-### US-069: Delivery Completion
+### US-008: Complete Manual KYC Entry
 
-**Type:** Frontend Component
-**Source File:** `delivery-completion.tsx`
+**Epic:** Customer Verification  
+**Actor:** Customer  
+**Frontend Component:** `kyc-verification.tsx`  
+**Backend Services:** Document upload service, KYC validation API
 
-**User Story:**
-> As a user, I want to interact with the Delivery Completion so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to manually enter my KYC details and upload documents so that I can complete verification when existing records are not available.
 
 #### Acceptance Criteria
-
-**Input Fields:**
-| Field | Validation |
-|-------|------------|
-| emailTo | Type: text |
-| emailSubject | Type: text |
-| smsTo | Type: text |
-
-**Error Messages:**
-- "lucide-react"
-- "h-5 w-5"
-- "h-4 w-4"
-
-**User Actions:**
-- Complete
+1. Customer name field accepts minimum 3 characters
+2. Aadhaar number field accepts 12 digits in XXXX XXXX XXXX format
+3. PAN number field accepts 10 alphanumeric characters (ABCDE1234F format)
+4. Mobile number accepts 10 digits starting with 6-9
+5. Email address validated for proper format
+6. Document upload supports Aadhaar Card, PAN Card, and Address Proof
+7. Accepted file formats: images and PDF
+8. Upload progress indicator shown for each document
+9. All three documents required for manual KYC completion
 
 ---
 
-### US-070: Eligibility Check
+### US-009: Review Policy Details Before Payment
 
-**Type:** Frontend Component
-**Source File:** `eligibility-check.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Dealer/Customer  
+**Frontend Component:** `policy-confirmation.tsx`  
+**Backend Services:** Policy generation service, Premium calculation
 
-**User Story:**
-> As a user, I want to interact with the Eligibility Check so that I can complete the related workflow step.
+#### User Story
+> As a dealer or customer, I want to review the complete policy details including premium breakdown so that I can confirm the purchase before payment.
 
 #### Acceptance Criteria
+1. Policy preview shows plan name, tenure, and coverage period
+2. Premium breakdown displays base premium, add-ons, subtotal
+3. GST (18%) calculated and displayed separately
+4. Total payable amount shown prominently
+5. Customer and vehicle details displayed for verification
+6. Policy number generated and displayed
+7. Issue date and expiry date shown
+8. Option to download or email policy preview
+9. Re-calculate button available to modify selections
 
-**User Actions:**
-- Back
-- Next
-
 ---
 
-### US-071: Invoice Generation
+### US-010: Select Payment Method
 
-**Type:** Frontend Component
-**Source File:** `invoice-generation.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Customer  
+**Frontend Component:** `payment-options.tsx`  
+**Backend Services:** Payment gateway integration
 
-**User Story:**
-> As a user, I want to interact with the Invoice Generation so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to choose from multiple payment options so that I can pay using my preferred method.
 
 #### Acceptance Criteria
-
-**User Actions:**
-- Back
-- Next
+1. Six payment methods available: Credit/Debit Card, UPI, Car Wallet EMI, Other EMI, Loyalty Points, Cash
+2. Popular payment methods (Card, UPI) are highlighted
+3. Each method shows description and any special features
+4. Payment method selection updates the payment form dynamically
+5. Total amount displayed in payment summary sidebar
+6. Secure payment indicator shown
 
 ---
 
-### US-072: K Y C Verification
+### US-011: Pay Using Credit/Debit Card
 
-**Type:** Frontend Component
-**Source File:** `kyc-verification.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Customer  
+**Frontend Component:** `payment-options.tsx`  
+**Backend Services:** Card payment gateway
 
-**User Story:**
-> As a user, I want to interact with the K Y C Verification so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to pay using my credit or debit card so that I can complete the transaction securely.
 
 #### Acceptance Criteria
+1. Card number field accepts 16 digits with auto-formatting
+2. Expiry date field accepts MM/YY format
+3. CVV field accepts 3 digits and masks input
+4. Cardholder name field for verification
+5. Card type auto-detected from card number
+6. Secure payment processing with encryption
 
-**Input Fields:**
-| Field | Validation |
-|-------|------------|
-| customerName | Type: text |
-| aadhar | Type: text |
-| pan | Type: text |
-| mobile | Type: tel |
-| email | Type: email |
-| address | Type: text |
-| aadharDoc | Type: file |
-| panDoc | Type: file |
-| addressDoc | Type: file |
-
-**User Actions:**
-- Back
-- Next
-
 ---
 
-### US-073: Payment Methods
+### US-012: Pay Using UPI
 
-**Type:** Frontend Component
-**Source File:** `payment-options.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Customer  
+**Frontend Component:** `payment-options.tsx`  
+**Backend Services:** UPI payment gateway
 
-**User Story:**
-> As a user, I want to interact with the Payment Methods so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to pay using UPI so that I can complete payment quickly using my preferred UPI app.
 
 #### Acceptance Criteria
-
-**Input Fields:**
-| Field | Validation |
-|-------|------------|
-| cardNumber | Type: text |
-| expiry | Type: text |
-| cvv | Type: password, Max: 3 chars |
-| cardName | Type: text |
-| upiId | Type: text |
-| pointsToRedeem | Type: number |
-
-**User Actions:**
-- Back
+1. UPI ID input field with format validation (yourname@upi)
+2. QR code displayed for scanning with any UPI app
+3. Supports GPay, PhonePe, Paytm and other UPI apps
+4. Payment confirmation received in real-time
 
 ---
 
-### US-074: Plans
+### US-013: Convert Payment to EMI
 
-**Type:** Frontend Component
-**Source File:** `plan-selection.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Customer  
+**Frontend Component:** `payment-options.tsx`  
+**Backend Services:** EMI calculation service, Financing partners API
 
-**User Story:**
-> As a user, I want to interact with the Plans so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to convert my payment to EMI so that I can pay in easy monthly installments.
 
 #### Acceptance Criteria
+1. Car Wallet EMI offers 3, 6, 9, 12 month options
+2. Other EMI (Bajaj Finserv, HDFC) offers 3, 6, 9, 12, 18, 24 month options
+3. Monthly EMI amount calculated and displayed for each tenure
+4. EMI details shown: amount per month × number of months
+5. Total EMI cost displayed for transparency
 
-**Input Fields:**
-| Field | Validation |
-|-------|------------|
-| tenure | Type: text |
-
-**User Actions:**
-- Back
-- Continue
-
 ---
 
-### US-075: Policy Confirmation
+### US-014: Redeem Loyalty Points
 
-**Type:** Frontend Component
-**Source File:** `policy-confirmation.tsx`
+**Epic:** Policy & Payment  
+**Actor:** Customer  
+**Frontend Component:** `payment-options.tsx`  
+**Backend Services:** Loyalty points service
 
-**User Story:**
-> As a user, I want to interact with the Policy Confirmation so that I can complete the related workflow step.
+#### User Story
+> As a customer, I want to redeem my loyalty points so that I can reduce the payment amount.
 
 #### Acceptance Criteria
+1. Available loyalty points balance displayed (e.g., 25,000 points)
+2. Conversion rate shown: 1 point = ₹1
+3. Maximum redemption limit enforced (₹5,000)
+4. Points input field with validation
+5. Remaining amount to be paid via other method displayed
 
-**User Actions:**
-- Back
-- Next
-
 ---
 
-### US-076: Vehicle Id Capture
+### US-015: Generate Invoice After Payment
 
-**Type:** Frontend Component
-**Source File:** `vehicle-id-capture.tsx`
+**Epic:** Invoice & Delivery  
+**Actor:** System  
+**Frontend Component:** `invoice-generation.tsx`  
+**Backend Services:** Invoice generation service, PDF generator
 
-**User Story:**
-> As a user, I want to interact with the Vehicle Id Capture so that I can complete the related workflow step.
+#### User Story
+> As a system, I want to generate a detailed invoice after successful payment so that the customer has a record of the transaction.
 
 #### Acceptance Criteria
-
-**Input Fields:**
-| Field | Validation |
-|-------|------------|
-| vin | Type: text |
-
-**Validations:**
-- `validateVIN()`
-
-**Error Messages:**
-- ");
-
-  const handleAddVehicle = () => {
-    if (!currentVin.trim()) return;
-
-    // Validate VIN format (US-001)
-    const vinValidation = validateVIN(currentVin);
-    if (!vinValidation.isValid) {
-      setVinError(vinValidation.error || "
-- ");
-
-    const newVehicle: Vehicle = {
-      vin: currentVin,
-      make: "
-- ");
-                    }}
-                    onKeyPress={(e) => e.key === "
-- "border-red-500"
-
-**User Actions:**
-- Add Vehicle
-- Scan
+1. Payment success banner displayed with confirmation
+2. Invoice number generated automatically
+3. Invoice shows dealer details with GSTIN
+4. Customer billing details displayed
+5. Vehicle details included (Model, Registration, VIN)
+6. Itemized breakdown: Plan premium, Add-ons, GST
+7. Payment method and transaction ID recorded
+8. Download, Print, and Email options available
+9. Terms and conditions included
 
 ---
 
-### US-077: Workflow Steps
+### US-016: Send Policy Documents via Email
 
-**Type:** Frontend Component
-**Source File:** `warranty-workflow.tsx`
+**Epic:** Invoice & Delivery  
+**Actor:** Dealer  
+**Frontend Component:** `delivery-completion.tsx`  
+**Backend Services:** Email service, Document attachment service
 
-**User Story:**
-> As a user, I want to interact with the Workflow Steps so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to send policy documents to the customer via email so that they have digital copies of their warranty.
 
 #### Acceptance Criteria
+1. Customer email pre-populated from KYC data
+2. Email subject includes policy number
+3. Email body contains policy summary and portal access link
+4. Three attachments: Warranty Policy Certificate, Invoice, Terms & Conditions
+5. Email preview shown before sending
+6. Send confirmation displayed after successful delivery
 
-*No specific acceptance criteria extracted from code.*
-
 ---
 
-### US-078: Workflow Stepper
+### US-017: Send Confirmation SMS
 
-**Type:** Frontend Component
-**Source File:** `workflow-stepper.tsx`
+**Epic:** Invoice & Delivery  
+**Actor:** Dealer  
+**Frontend Component:** `delivery-completion.tsx`  
+**Backend Services:** SMS gateway service
 
-**User Story:**
-> As a user, I want to interact with the Workflow Stepper so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to send a confirmation SMS to the customer so that they receive immediate notification of warranty activation.
 
 #### Acceptance Criteria
-
-*No specific acceptance criteria extracted from code.*
+1. Customer mobile number pre-populated from KYC data
+2. SMS contains policy number, vehicle registration, premium amount
+3. Support contact number included in SMS
+4. Character count displayed (160 character limit)
+5. SMS sent from official Maruti Suzuki sender ID (SM-MARUTI)
+6. Send confirmation displayed after successful delivery
 
 ---
 
-### US-079: Main
+### US-018: Complete Warranty Delivery Process
 
-**Type:** Frontend Component
-**Source File:** `main.tsx`
+**Epic:** Invoice & Delivery  
+**Actor:** Dealer  
+**Frontend Component:** `delivery-completion.tsx`  
+**Backend Services:** Workflow state management
 
-**User Story:**
-> As a user, I want to interact with the Main so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to complete the warranty delivery process so that I can process another warranty application.
 
 #### Acceptance Criteria
+1. Success banner confirms warranty activation
+2. Policy number, status (Active), and customer name displayed
+3. Process summary shows all completed steps: Policy Created, Certificate Generated, Invoice Generated, Payment Completed
+4. Quick actions available: Download Policy, Download Invoice
+5. Complete & Process Another button resets workflow for new application
+6. All workflow data cleared for fresh start
 
-*No specific acceptance criteria extracted from code.*
-
 ---
 
-### US-080: A P I  B A S E  U R L
+### US-019: Navigate Through Warranty Workflow Steps
 
-**Type:** Frontend Component
-**Source File:** `api.ts`
+**Epic:** Workflow Navigation  
+**Actor:** Dealer  
+**Frontend Component:** `warranty-workflow.tsx, workflow-stepper.tsx`  
+**Backend Services:** Workflow state management
 
-**User Story:**
-> As a user, I want to interact with the A P I  B A S E  U R L so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to navigate through the 9-step warranty workflow so that I can complete the warranty process in a guided manner.
 
 #### Acceptance Criteria
-
-**Error Messages:**
-- "Failed to fetch warranties"
-- "Failed to fetch warranty"
-- "Failed to create warranty"
-- "Failed to fetch expiring warranties"
-- "Failed to fetch stats"
+1. Workflow stepper shows all 9 steps with labels and descriptions
+2. Current step is highlighted
+3. Completed steps show checkmark indicator
+4. Back button allows returning to previous step
+5. Continue/Next button proceeds to next step
+6. Step validation prevents proceeding with incomplete data
+7. Smooth scroll to top when navigating between steps
 
 ---
 
-### US-081: Validate V I N
+### US-020: Cancel Warranty Application
 
-**Type:** Frontend Component
-**Source File:** `validations.ts`
+**Epic:** Workflow Navigation  
+**Actor:** Dealer  
+**Frontend Component:** `warranty-workflow.tsx`  
+**Backend Services:** Workflow state management
 
-**User Story:**
-> As a user, I want to interact with the Validate V I N so that I can complete the related workflow step.
+#### User Story
+> As a dealer, I want to cancel the warranty application at any step so that I can exit the process if needed.
 
 #### Acceptance Criteria
+1. Cancel button available on each workflow step
+2. Confirmation prompt before cancellation
+3. All entered data cleared on cancellation
+4. User returned to initial state or dashboard
 
-**Error Messages:**
-- "VIN is required"
-- "VIN must be exactly 17 characters"
-- "Invalid VIN format. Use only letters (excluding I, O, Q) and numbers"
-- "Valid VIN"
-- "GST Number is required"
-- "GST Number must be exactly 15 characters"
-- "Invalid GST Number format"
-- "Valid GST Number"
-- "Mobile number is required"
-- "Mobile number must be 10 digits"
-- "Invalid mobile number. Must start with 6, 7, 8, or 9"
-- "Valid mobile number"
-- "Email is required"
-- "Invalid email format"
-- "Valid email"
-- "Registration number is required"
-- "Invalid registration number format (e.g., DL-01-AB-1234)"
-- "Valid registration number"
-- "Mileage cannot be negative"
-- "Mileage seems unrealistic. Please verify"
-- "Valid mileage"
-- "Please upload minimum 4 documents"
-- "Documents validated"
-- "Invalid payment mode"
-- "Bank name is required for cheque payment"
-- "Cheque number is required for cheque payment"
-- "Valid payment mode"
-- "Invalid warranty type"
-- "Valid warranty type"
-- "Vehicle is not eligible for extended warranty - Age exceeds 5 years"
-- "Vehicle is not eligible for extended warranty - Mileage exceeds 100,000 km"
-- "Vehicle is not eligible for extended warranty - Must be at least 6 months old"
-- "Vehicle is eligible for extended warranty"
-- "Valid"
-- "Valid"
-
 ---
-
-### US-082: Vite.config
 
-**Type:** Frontend Component
-**Source File:** `vite.config.ts`
+## 🛠️ Technology Stack
 
-**User Story:**
-> As a user, I want to interact with the Vite.config so that I can complete the related workflow step.
+Based on analysis of source files:
 
-#### Acceptance Criteria
+### Frontend
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS with PostCSS
+- **UI Components:** shadcn/ui (MIT License)
+- **Icons:** Lucide React
 
-*No specific acceptance criteria extracted from code.*
+### Backend
+- **Framework:** .NET 9.0
+- **API:** RESTful Web API
+- **Validation:** Custom validation services
 
----
+### Key Dependencies
+| Package | Version | Type |
+|---------|---------|------|
+| @emotion/react | 11.14.0 | Runtime |
+| @emotion/styled | 11.14.1 | Runtime |
+| @mui/icons-material | 7.3.5 | Runtime |
+| @mui/material | 7.3.5 | Runtime |
+| @popperjs/core | 2.11.8 | Runtime |
+| @radix-ui/react-accordion | 1.2.3 | Runtime |
+| @radix-ui/react-alert-dialog | 1.1.6 | Runtime |
+| @radix-ui/react-aspect-ratio | 1.1.2 | Runtime |
+| @radix-ui/react-avatar | 1.1.3 | Runtime |
+| @radix-ui/react-checkbox | 1.1.4 | Runtime |
+| @tailwindcss/vite | 4.1.12 | Dev |
+| @vitejs/plugin-react | 4.7.0 | Dev |
+| tailwindcss | 4.1.12 | Dev |
+| vite | 6.3.5 | Dev |
 
 ## 📁 Source Files Analyzed
 
-The following files from `figma-source` folder were analyzed:
-
-| File | Type | Size |
+| File | Type | Path |
 |------|------|------|
-| ATTRIBUTIONS (1).md | Documentation | 289 B |
-| ATTRIBUTIONS.md | Documentation | 289 B |
-| Guidelines.md | Documentation | 2.5 KB |
-| Guidelines1.md | Documentation | 2.5 KB |
-| package (1).json | Configuration | 2.4 KB |
-| package.json | Configuration | 2.6 KB |
-| postcss.config (1).mjs | Other | 460 B |
-| postcss.config.mjs | Other | 460 B |
-| App.tsx | React Component | 4.8 KB |
-| AdminView.tsx | React Component | 2.7 KB |
-| AgentPerformanceChart.tsx | React Component | 2.1 KB |
-| BusinessView.tsx | React Component | 1.9 KB |
-| dashboard.tsx | React Component | 9.8 KB |
-| DashboardFilters.tsx | React Component | 2.0 KB |
-| dms-sidebar.tsx | React Component | 3.3 KB |
-| dms-topbar.tsx | React Component | 4.2 KB |
-| FailedValidationsDialog.tsx | React Component | 3.7 KB |
-| ImageWithFallback.tsx | React Component | 1.1 KB |
-| Header.tsx | React Component | 2.9 KB |
-| kpi-card.tsx | React Component | 1.9 KB |
-| KpiCard.tsx | React Component | 1.6 KB |
-| OrderSourceChart.tsx | React Component | 4.8 KB |
-| OrderVolumeChart.tsx | React Component | 4.5 KB |
-| RecentOrdersTable.tsx | React Component | 3.3 KB |
-| Sidebar.tsx | React Component | 2.0 KB |
-| SystemUsageTrendChart.tsx | React Component | 4.0 KB |
-| TokenDetailsDialog.tsx | React Component | 3.4 KB |
-| TokenUsageChart.tsx | React Component | 1.5 KB |
-| accordion.tsx | React Component | 2.0 KB |
-| alert-dialog.tsx | React Component | 3.8 KB |
-| alert.tsx | React Component | 1.6 KB |
-| aspect-ratio.tsx | React Component | 284 B |
-| avatar.tsx | React Component | 1.1 KB |
-| badge.tsx | React Component | 1.6 KB |
-| breadcrumb.tsx | React Component | 2.3 KB |
-| button.tsx | React Component | 2.1 KB |
-| calendar.tsx | React Component | 2.8 KB |
-| card.tsx | React Component | 1.9 KB |
-| carousel.tsx | React Component | 5.5 KB |
-| chart.tsx | React Component | 9.6 KB |
-| checkbox.tsx | React Component | 1.2 KB |
-| collapsible.tsx | React Component | 806 B |
-| command.tsx | React Component | 4.6 KB |
-| context-menu.tsx | React Component | 8.1 KB |
-| dialog.tsx | React Component | 3.7 KB |
-| drawer.tsx | React Component | 4.0 KB |
-| dropdown-menu.tsx | React Component | 8.1 KB |
-| form.tsx | React Component | 3.7 KB |
-| hover-card.tsx | React Component | 1.5 KB |
-| input-otp.tsx | React Component | 2.2 KB |
-| input.tsx | React Component | 963 B |
-| label.tsx | React Component | 614 B |
-| menubar.tsx | React Component | 8.2 KB |
-| navigation-menu.tsx | React Component | 6.5 KB |
-| pagination.tsx | React Component | 2.6 KB |
-| popover.tsx | React Component | 1.6 KB |
-| progress.tsx | React Component | 743 B |
-| radio-group.tsx | React Component | 1.4 KB |
-| resizable.tsx | React Component | 2.0 KB |
-| scroll-area.tsx | React Component | 1.6 KB |
-| select.tsx | React Component | 6.1 KB |
-| separator.tsx | React Component | 707 B |
-| sheet.tsx | React Component | 4.0 KB |
-| sidebar.tsx | React Component | 21.2 KB |
-| skeleton.tsx | React Component | 275 B |
-| slider.tsx | React Component | 2.0 KB |
-| sonner.tsx | React Component | 571 B |
-| switch.tsx | React Component | 1.2 KB |
-| table.tsx | React Component | 2.4 KB |
-| tabs.tsx | React Component | 1.9 KB |
-| textarea.tsx | React Component | 767 B |
-| toggle-group.tsx | React Component | 1.9 KB |
-| toggle.tsx | React Component | 1.5 KB |
-| tooltip.tsx | React Component | 1.9 KB |
-| use-mobile.ts | TypeScript | 585 B |
-| utils.ts | TypeScript | 169 B |
-| addons-selection.tsx | React Component | 8.7 KB |
-| delivery-completion.tsx | React Component | 10.0 KB |
-| eligibility-check.tsx | React Component | 8.7 KB |
-| invoice-generation.tsx | React Component | 10.0 KB |
-| kyc-verification.tsx | React Component | 11.5 KB |
-| payment-options.tsx | React Component | 11.5 KB |
-| plan-selection.tsx | React Component | 7.4 KB |
-| policy-confirmation.tsx | React Component | 9.9 KB |
-| vehicle-id-capture.tsx | React Component | 10.8 KB |
-| warranty-workflow.tsx | React Component | 6.7 KB |
-| workflow-stepper.tsx | React Component | 2.7 KB |
-| main.tsx | React Component | 247 B |
-| api.ts | TypeScript | 1.7 KB |
-| fonts.css | Stylesheet | 801 B |
-| index.css | Stylesheet | 72 B |
-| tailwind.css | Stylesheet | 98 B |
-| theme.css | Stylesheet | 5.4 KB |
-| validations.ts | TypeScript | 6.5 KB |
-| Test | Other | 1 B |
-| vite.config.ts | TypeScript | 490 B |
+| ATTRIBUTIONS (1).md | Documentation | ATTRIBUTIONS (1).md |
+| ATTRIBUTIONS.md | Documentation | ATTRIBUTIONS.md |
+| Guidelines.md | Documentation | Guidelines.md |
+| Guidelines1.md | Documentation | Guidelines1.md |
+| package (1).json | Configuration | package (1).json |
+| package.json | Configuration | package.json |
+| postcss.config (1).mjs | ES Module | postcss.config (1).mjs |
+| postcss.config.mjs | ES Module | postcss.config.mjs |
+| App.tsx | React Component | src\app\App.tsx |
+| AdminView.tsx | React Component | src\app\components\AdminView.tsx |
+| AgentPerformanceChart.tsx | React Component | src\app\components\AgentPerformanceChart.tsx |
+| BusinessView.tsx | React Component | src\app\components\BusinessView.tsx |
+| dashboard.tsx | React Component | src\app\components\dashboard.tsx |
+| DashboardFilters.tsx | React Component | src\app\components\DashboardFilters.tsx |
+| dms-sidebar.tsx | React Component | src\app\components\dms-sidebar.tsx |
+| dms-topbar.tsx | React Component | src\app\components\dms-topbar.tsx |
+| FailedValidationsDialog.tsx | React Component | src\app\components\FailedValidationsDialog.tsx |
+| ImageWithFallback.tsx | React Component | src\app\components\figma\ImageWithFallback.tsx |
+| Header.tsx | React Component | src\app\components\Header.tsx |
+| kpi-card.tsx | React Component | src\app\components\kpi-card.tsx |
+| KpiCard.tsx | React Component | src\app\components\KpiCard.tsx |
+| OrderSourceChart.tsx | React Component | src\app\components\OrderSourceChart.tsx |
+| OrderVolumeChart.tsx | React Component | src\app\components\OrderVolumeChart.tsx |
+| RecentOrdersTable.tsx | React Component | src\app\components\RecentOrdersTable.tsx |
+| Sidebar.tsx | React Component | src\app\components\Sidebar.tsx |
+| SystemUsageTrendChart.tsx | React Component | src\app\components\SystemUsageTrendChart.tsx |
+| TokenDetailsDialog.tsx | React Component | src\app\components\TokenDetailsDialog.tsx |
+| TokenUsageChart.tsx | React Component | src\app\components\TokenUsageChart.tsx |
+| accordion.tsx | React Component | src\app\components\ui\accordion.tsx |
+| alert-dialog.tsx | React Component | src\app\components\ui\alert-dialog.tsx |
+| alert.tsx | React Component | src\app\components\ui\alert.tsx |
+| aspect-ratio.tsx | React Component | src\app\components\ui\aspect-ratio.tsx |
+| avatar.tsx | React Component | src\app\components\ui\avatar.tsx |
+| badge.tsx | React Component | src\app\components\ui\badge.tsx |
+| breadcrumb.tsx | React Component | src\app\components\ui\breadcrumb.tsx |
+| button.tsx | React Component | src\app\components\ui\button.tsx |
+| calendar.tsx | React Component | src\app\components\ui\calendar.tsx |
+| card.tsx | React Component | src\app\components\ui\card.tsx |
+| carousel.tsx | React Component | src\app\components\ui\carousel.tsx |
+| chart.tsx | React Component | src\app\components\ui\chart.tsx |
+| checkbox.tsx | React Component | src\app\components\ui\checkbox.tsx |
+| collapsible.tsx | React Component | src\app\components\ui\collapsible.tsx |
+| command.tsx | React Component | src\app\components\ui\command.tsx |
+| context-menu.tsx | React Component | src\app\components\ui\context-menu.tsx |
+| dialog.tsx | React Component | src\app\components\ui\dialog.tsx |
+| drawer.tsx | React Component | src\app\components\ui\drawer.tsx |
+| dropdown-menu.tsx | React Component | src\app\components\ui\dropdown-menu.tsx |
+| form.tsx | React Component | src\app\components\ui\form.tsx |
+| hover-card.tsx | React Component | src\app\components\ui\hover-card.tsx |
+| input-otp.tsx | React Component | src\app\components\ui\input-otp.tsx |
+| input.tsx | React Component | src\app\components\ui\input.tsx |
+| label.tsx | React Component | src\app\components\ui\label.tsx |
+| menubar.tsx | React Component | src\app\components\ui\menubar.tsx |
+| navigation-menu.tsx | React Component | src\app\components\ui\navigation-menu.tsx |
+| pagination.tsx | React Component | src\app\components\ui\pagination.tsx |
+| popover.tsx | React Component | src\app\components\ui\popover.tsx |
+| progress.tsx | React Component | src\app\components\ui\progress.tsx |
+| radio-group.tsx | React Component | src\app\components\ui\radio-group.tsx |
+| resizable.tsx | React Component | src\app\components\ui\resizable.tsx |
+| scroll-area.tsx | React Component | src\app\components\ui\scroll-area.tsx |
+| select.tsx | React Component | src\app\components\ui\select.tsx |
+| separator.tsx | React Component | src\app\components\ui\separator.tsx |
+| sheet.tsx | React Component | src\app\components\ui\sheet.tsx |
+| sidebar.tsx | React Component | src\app\components\ui\sidebar.tsx |
+| skeleton.tsx | React Component | src\app\components\ui\skeleton.tsx |
+| slider.tsx | React Component | src\app\components\ui\slider.tsx |
+| sonner.tsx | React Component | src\app\components\ui\sonner.tsx |
+| switch.tsx | React Component | src\app\components\ui\switch.tsx |
+| table.tsx | React Component | src\app\components\ui\table.tsx |
+| tabs.tsx | React Component | src\app\components\ui\tabs.tsx |
+| textarea.tsx | React Component | src\app\components\ui\textarea.tsx |
+| toggle-group.tsx | React Component | src\app\components\ui\toggle-group.tsx |
+| toggle.tsx | React Component | src\app\components\ui\toggle.tsx |
+| tooltip.tsx | React Component | src\app\components\ui\tooltip.tsx |
+| use-mobile.ts | TypeScript | src\app\components\ui\use-mobile.ts |
+| utils.ts | TypeScript | src\app\components\ui\utils.ts |
+| addons-selection.tsx | React Component | src\app\components\warranty\addons-selection.tsx |
+| delivery-completion.tsx | React Component | src\app\components\warranty\delivery-completion.tsx |
+| eligibility-check.tsx | React Component | src\app\components\warranty\eligibility-check.tsx |
+| invoice-generation.tsx | React Component | src\app\components\warranty\invoice-generation.tsx |
+| kyc-verification.tsx | React Component | src\app\components\warranty\kyc-verification.tsx |
+| payment-options.tsx | React Component | src\app\components\warranty\payment-options.tsx |
+| plan-selection.tsx | React Component | src\app\components\warranty\plan-selection.tsx |
+| policy-confirmation.tsx | React Component | src\app\components\warranty\policy-confirmation.tsx |
+| vehicle-id-capture.tsx | React Component | src\app\components\warranty\vehicle-id-capture.tsx |
+| warranty-workflow.tsx | React Component | src\app\components\warranty-workflow.tsx |
+| workflow-stepper.tsx | React Component | src\app\components\workflow-stepper.tsx |
+| main.tsx | React Component | src\main.tsx |
+| api.ts | TypeScript | src\services\api.ts |
+| fonts.css | Stylesheet | src\styles\fonts.css |
+| index.css | Stylesheet | src\styles\index.css |
+| tailwind.css | Stylesheet | src\styles\tailwind.css |
+| theme.css | Stylesheet | src\styles\theme.css |
+| validations.ts | TypeScript | src\utils\validations.ts |
+| vite.config.ts | TypeScript | vite.config.ts |
 
 ---
 
@@ -1538,13 +644,14 @@ The following files from `figma-source` folder were analyzed:
 
 | Property | Value |
 |----------|-------|
-| Generated | 1/16/2026, 12:22:57 PM |
-| Source | Local figma-source folder (from GitHub New folder) |
-| GitHub Repository | astharungta/Figma-Design |
+| Generated | 1/16/2026, 12:57:32 PM |
+| Source | Figma Design Code Files |
+| Repository | astharungta/Figma-Design |
+| Total User Stories | 20 |
 | Files Analyzed | 96 |
 
 ---
 
 **End of User Story Catalogue**
 
-*This document is automatically generated from Figma code files downloaded from GitHub.*
+*This document was automatically generated from Figma code files based on user journey analysis.*
